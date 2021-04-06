@@ -1,0 +1,316 @@
+header {
+  width: 1475px;
+  margin:0 auto;
+  height: 110px;
+  background: white;
+  padding: 0px 0px;
+  font-family:"Roboto"
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  color: black;
+}
+
+.header-logo p {
+  padding-top: 32px;
+  float:left;
+  padding-left: 0px;
+  font-size: 21px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+span {
+  color: #a9a9a9;
+}
+
+body {
+  font-family: 'Roboto', "YuGothic-light";
+}
+
+
+.header-list {
+  padding-top:39px;
+}
+
+.contact, .biography, .work {
+    padding-top: 3.5px;
+    font-size: 15px;
+    color: #a9a9a9;
+    list-style: none;
+    float: right;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: :#C0C0C0;
+}
+
+.slash1, .slash2 {
+  font-size: 20px;
+  list-style: none;
+  float: right;
+  padding-right:10px;
+  padding-left:10px;
+  font-weight: 300;
+}
+
+
+.contact:hover {
+  opacity: 0.35;
+}
+
+
+.biography:hover {
+  opacity: 0.35;
+}
+
+.work {
+  float:right;
+}
+
+.work:hover {
+  opacity: 0.35;
+}
+
+
+.image1 {
+text-align:center;
+}
+.image1 img {
+  width:1475px;
+}
+
+.image2 {
+text-align:center;
+padding-top: 20px;
+}
+.image2 img {
+  width:1475px;
+}
+
+.br-sp {
+  display: none;
+}
+
+
+.sakuhin-text {
+  padding-top:31px;
+  margin:0 auto;
+  width:1475px;
+}
+
+.title {
+  font-size:16px;
+  letter-spacing: 1.5px;
+  line-height: 0px;
+  font-weight: 400;
+  margin:0;
+}
+
+.detail {
+  padding-top: 3px;
+  font-size:14.5px;
+  line-height: 24.5px;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+}
+
+
+
+.back {
+  padding-top:90px;
+  padding-left:0px;
+  text-align: center;
+  font-size:15px;
+  padding-bottom:80px;
+  font-weight:500;
+}
+
+@media only screen and (max-width:1475px) {
+  header {
+    width: 1100px;
+    margin:0 auto;
+    height: 110px;
+    background: white;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    }
+    .image1 img {
+      width:1100px;
+    }
+    .sakuhin-text {
+      width:1100px;
+    }
+
+
+}
+
+@media only screen and (max-width:1100px) {
+  header {
+    width: 725px;
+    margin:0 auto;
+    height: 110px;
+    background: white;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    }
+    .image1 img {
+      width:725px;
+    }
+    .sakuhin-text {
+      width:725px;
+    }
+
+
+}
+
+@media screen and (max-width: 725px){
+  header {
+    width: 400px;
+    margin:0 auto;
+    height: 155px;
+    background: white;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    }
+
+    .header-logo p {
+      padding-top: 40px;
+      line-height: 0px;
+      font-size: 23.5px;
+      letter-spacing: 2px;
+      font-weight: 500;
+      float:none;
+    }
+
+.ul {
+  text-align: center;
+}
+
+    .header-list {
+      padding-top:15px;
+      padding-left:40px;
+      display: inline-block;
+      padding-bottom:50px;
+
+    }
+
+    .contact, .biography, .work {
+        padding-top: 3px;
+        font-size: 17px;
+        color: #a9a9a9;
+        font-weight: 500;
+        color: :#C0C0C0;
+        line-height: :0px;
+    }
+    .slash1, .slash2 {
+      font-size: 22px;
+      padding-right:10px;
+      font-weight: 300;
+    line-height: :0px;
+    }
+
+    .image1 img {
+      width:600px;
+    }
+    .sakuhin-text {
+      width:600px;
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+  header {
+    width: 320px;
+    margin:0 auto;
+    height: 110px;
+    background: white;
+    padding: 0px 0px;
+    }
+
+  .span {
+  line-height: 0px;
+  }
+    .header-logo p {
+      padding-top: 35px;
+      line-height: 0px;
+      font-size: 21px;
+      letter-spacing: 0.25px;
+      font-weight: 500;
+      float:none;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+
+    }
+      .header-logo span {
+        line-height: 0px;
+        float:none;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+
+    .header-list {
+      padding-top:21px;
+      padding-bottom:50px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 14.5px;
+    }
+
+    .contact, .biography, .work {
+        padding-top: 3px;
+        font-size: 14px;
+        color: #a9a9a9;
+        font-weight: 500;
+        color: :#C0C0C0;
+        line-height: :0px;
+    }
+    .slash1, .slash2 {
+      font-size: 18px;
+      padding-right:10px;
+      font-weight: 300;
+    line-height: :0px;
+    }
+
+    .image1 img {
+      width:100%;
+    }
+    .sakuhin-text {
+      padding-top:30px;
+      width:320px;
+    }
+
+    .title {
+      font-size:17px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      line-height: 0px;
+    }
+
+
+  .detail {
+      margin-top:12.5px;
+      margin-bottom: :20px;
+      text-align: justify;
+      text-justify: inter-ideograph;
+      line-height:25px;
+
+    }
+    .br-pc {
+      display: none;
+    }
+  .back {
+  padding-top:50px;
+  padding-left:0px;
+  text-align: center;
+  font-size:15px;
+  padding-bottom:70px;
+  font-weight:500;
+
+}
+
+
+}
