@@ -89,6 +89,13 @@ padding-top: 20px;
   width:1475px;
 }
 
+.image3 {
+text-align:center;
+padding-top: 20px;
+}
+.image3 img {
+  width:1475px;
+}
 .br-sp {
   display: none;
 }
