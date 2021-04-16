@@ -32,6 +32,8 @@ span {
 
 body {
   font-family: "helvetica", "YuGothic", "sans-serif";
+  -webkit-text-size-adjust: 100%;
+
 }
 
 .header-list {
@@ -228,13 +230,112 @@ padding-top: 20px;
 
 @media only screen and (max-width:1100px) {
   header {
-    width: 725px;
+    width: 600px;
     margin:0 auto;
     height: 110px;
     background: white;
     padding: 0px 0px;
     box-sizing: border-box;
     }
+
+    .header-logo {
+      padding-top: 0;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .drawer{
+      display: block;
+      margin: 0;
+    }
+
+    .drawer-hidden {
+       display: none;
+     }
+
+       .drawer-open {
+         display: flex;
+         float:right;
+         padding-top: 58.5px;
+         height: 30px;
+         width: 26px;
+         justify-content: center;
+         position: relative;
+         z-index: 98;
+         cursor: pointer;
+         padding-bottom:0;
+         margin:0;
+       }
+
+       .drawer-open span,
+       .drawer-open span:before,
+       .drawer-open span:after {
+         content: '';
+         display: block;
+         height: 4px;
+         width: 25px;
+         border-radius: 3px;
+         background: #808080;
+         transition: 0.5s;
+         position: absolute;
+       }
+
+       .drawer-open span:before {
+         bottom: 8px;
+       }
+
+       .drawer-open span:after {
+         top: 8px;
+       }
+
+       #drawer-check:checked ~ .drawer-open span {
+         background: rgba(255, 255, 255, 0);
+       }
+
+       #drawer-check:checked ~ .drawer-open span::before {
+         bottom: 0;
+         transform: rotate(45deg);
+       }#drawer-check:checked ~ .drawer-open span::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+       .drawer-content {
+         width: 100%;
+         height: 100%;
+         position: fixed;
+         top: 0;
+         left: 100%;
+         background: #fff;
+         transition: .5s;
+         margin:0;
+         padding:0;
+       }
+
+       #drawer-check:checked ~ .drawer-content {
+         left: 0;
+       }
+
+
+
+
+    .drawer-list {
+      position: absolute;
+      margin: 0;
+      padding-left: 35px;
+      padding-top:35px;
+      list-style: none;
+      font-family: "Roboto";
+      font-weight: 700;
+      line-height: 55px;
+      font-size:30px;
+      letter-spacing: 1px;
+      bottom: 0;
+      padding-bottom: 40px;
+    }
+
     .image1 img {
       width:725px;
     }
@@ -260,24 +361,23 @@ padding-top: 20px;
       width:725px;
     }
     .sakuhin-text {
-      width:725px;
+      width:600px;
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 767px){
   header {
-    width: 320px;
+    width: 300px;
     margin:0 auto;
+    height: 85px;
     height: 87px;
     padding: 0px 0px;
     padding-bottoms:0;
     margin-bottoms:0;
     }
-
 .header-logo {
   padding-top: 0;
 }
-
     .header-logo p {
       padding-top: 13.5px;
       line-height: 0px;
@@ -288,39 +388,32 @@ padding-top: 20px;
       padding-bottom: 0px;
       margin: 0px;
     }
-
 .header-logo p::first-line {
   line-height: 42px;
 }
-
       .header-logo span {
         line-height: 0px;
         float:none;
         padding-bottom: 0px;
         margin-bottom: 0px;
       }
-
       .br-sp {
         display:block;
       }
-
       .header-list {
         display: none;
       }
-
 .drawer{
   display: block;
   margin: 0;
 }
-
    .drawer-hidden {
      display: none;
    }
-
    .drawer-open {
      display: flex;
      float:right;
-     padding-top: 43px;
+     padding-top: 41px;
      height: 30px;
      width: 26px;
      justify-content: center;
@@ -330,7 +423,6 @@ padding-top: 20px;
      padding-bottom:0;
      margin:0;
    }
-
    .drawer-open span,
    .drawer-open span:before,
    .drawer-open span:after {
@@ -343,19 +435,15 @@ padding-top: 20px;
      transition: 0.5s;
      position: absolute;
    }
-
    .drawer-open span:before {
      bottom: 10px;
    }
-
    .drawer-open span:after {
      top: 10px;
    }
-
    #drawer-check:checked ~ .drawer-open span {
      background: rgba(255, 255, 255, 0);
    }
-
    #drawer-check:checked ~ .drawer-open span::before {
      bottom: 0;
      transform: rotate(45deg);
@@ -363,7 +451,6 @@ padding-top: 20px;
   top: 0;
   transform: rotate(-45deg);
 }
-
    .drawer-content {
      width: 100%;
      height: 100%;
@@ -375,14 +462,9 @@ padding-top: 20px;
      margin:0;
      padding:0;
    }
-
    #drawer-check:checked ~ .drawer-content {
      left: 0;
    }
-
-
-
-
 .drawer-list {
   position: absolute;
   margin: 0;
@@ -397,6 +479,8 @@ padding-top: 20px;
   bottom: 0;
   padding-bottom: 40px;
 }
+
+
 
 .image1 {
   padding-top:0;
@@ -462,7 +546,7 @@ padding-top: 20px;
 
   .sakuhin-text {
       padding-top:30px;
-      width:320px;
+      width:300px;
     }
 
     .title {
@@ -493,5 +577,12 @@ padding-top: 20px;
   font-weight:500;
 }
 
+@media (orientation: landscape) and (max-width: 767px){
+  header {
+    width: 650px;
+    }
+  .sakuhin-text {
+      width:650px;
+    }
 
 }
